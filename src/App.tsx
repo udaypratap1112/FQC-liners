@@ -42,7 +42,14 @@ export default function App() {
   }, [searchQuery, selectedCategories]);
 
   const toggleCategory = (category: string) => {
-    setSelectedCategories([category]);
+    if(selectedCategories.includes(category)){
+      setSelectedCategories([]);
+    }
+    else{
+      setSelectedCategories([category]);
+    }
+    
+    
   };
 
   const clearAllFilters = () => {
@@ -127,6 +134,7 @@ export default function App() {
             {filteredParagraphs.length > 0 ? (
               filteredParagraphs.map((para) => (
                 <motion.div
+                  onClick={() => handleCopy(para.content, para.id)}
                   key={para.id}
                   layout
                   initial={{ opacity: 0, y: 10 }}
