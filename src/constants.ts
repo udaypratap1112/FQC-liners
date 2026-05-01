@@ -109,5 +109,14 @@ export const PARAGRAPHS: Paragraph[] = [
     id:"20",
     categories:["Appeal"],
     content:"A Site Visit was conducted at <IA name>, where, <Assistant Controller of Examination (Name not disclosed)> stated that the document submitted by the applicant is genuine"
+  },
+  {
+    id:"21",
+    categories:["Rajiv Gandhi"],
+    content:`Based on our review, we have found no evidence of duplicity.
+
+To Authenticate the Mode of Study, we requested a complete copy of the applicant's passport (all pages), The submitted document confirms there were no travel records during that Period.
+
+Furthermore, the applicant has formally confirmed to Dataflow that no employment was undertaken while pursuing the Bachelor of Science in Nursing (Post Basic) program.`
   }
 ];
