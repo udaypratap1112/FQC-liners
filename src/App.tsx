@@ -52,9 +52,9 @@ export default function App() {
 
       const query = searchQuery.toLowerCase();
 
-      result = result.filter(p => 
+      result = result.filter(p =>
 
-        p.content.toLowerCase().includes(query) || 
+        p.content.toLowerCase().includes(query) ||
 
         p.categories.some(c => c.toLowerCase().includes(query))
 
@@ -68,7 +68,7 @@ export default function App() {
 
     if (selectedCategories.length > 0) {
 
-      result = result.filter(p => 
+      result = result.filter(p =>
 
         selectedCategories.every(sc => p.categories.includes(sc))
 
@@ -86,21 +86,21 @@ export default function App() {
 
   const toggleCategory = (category: string) => {
 
-    if(selectedCategories.includes(category)){
+    if (selectedCategories.includes(category)) {
 
       setSelectedCategories([]);
 
     }
 
-    else{
+    else {
 
       setSelectedCategories([category]);
 
     }
 
-    
 
-    
+
+
 
   };
 
@@ -140,7 +140,7 @@ export default function App() {
 
       {/* Sleek Header */}
 
-      <header className="bg-white border-b border-slate-200 py-6 px-10 shadow-sm shrink-0">
+      <header className="bg-white border-b border-slate-200 py-2 px-10 shadow-sm shrink-0">
 
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
 
@@ -152,17 +152,17 @@ export default function App() {
 
           </div>
 
-          
+
 
           <div className="flex items-center gap-3 w-full md:w-1/2 justify-end">
 
             <div className="relative w-full max-w-sm">
 
-              <input 
+              <input
 
-                type="text" 
+                type="text"
 
-                placeholder="Search within paragraphs..." 
+                placeholder="Search within paragraphs..."
 
                 value={searchQuery}
 
@@ -194,7 +194,7 @@ export default function App() {
 
             {(searchQuery || selectedCategories.length > 0) && (
 
-              <button 
+              <button
 
                 onClick={clearAllFilters}
 
@@ -234,15 +234,13 @@ export default function App() {
 
             onClick={() => toggleCategory(cat)}
 
-            className={`px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all border ${
+            className={`px-3 py-1.5 rounded-full text-xs font-semibold whitespace-nowrap transition-all border ${selectedCategories.includes(cat)
 
-              selectedCategories.includes(cat)
+              ? 'bg-blue-600 border-blue-600 text-white shadow-md shadow-blue-200 ring-2 ring-blue-100'
 
-                ? 'bg-blue-600 border-blue-600 text-white shadow-md shadow-blue-200 ring-2 ring-blue-100'
+              : 'bg-slate-50 border-slate-200 text-slate-600 hover:border-slate-300 hover:bg-white'
 
-                : 'bg-slate-50 border-slate-200 text-slate-600 hover:border-slate-300 hover:bg-white'
-
-            }`}
+              }`}
 
           >
 
@@ -260,7 +258,7 @@ export default function App() {
 
       <main className="flex-1 overflow-y-auto p-6 md:p-10 bg-slate-50">
 
-        <div className="max-w-4xl mx-auto flex flex-col gap-5">
+        <div className="max-w-7xl mx-auto grid grid-cols-2 gap-3">
 
           <AnimatePresence mode="popLayout">
 
@@ -282,29 +280,27 @@ export default function App() {
 
                   exit={{ opacity: 0, scale: 0.98 }}
 
-                  className="bg-white rounded-xl border border-slate-200 p-6 shadow-sm flex flex-col sm:flex-row items-start justify-between gap-6 hover:border-blue-100 transition-colors group"
+                  className="bg-white rounded-xl border border-slate-200 px-4 py-4 shadow-sm flex flex-col sm:flex-row items-start justify-between gap-6 hover:border-blue-100 transition-colors group"
 
                 >
 
                   <div className="flex-1">
 
-                    <div className="flex flex-wrap gap-2 mb-3">
+                    <div className="flex flex-wrap gap-2 mb-2">
 
                       {para.categories.map(cat => (
 
-                        <span 
+                        <span
 
                           key={cat}
 
-                          className={`text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded transition-colors ${
+                          className={`text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded transition-colors ${selectedCategories.includes(cat)
 
-                            selectedCategories.includes(cat)
+                            ? 'bg-blue-600 text-white'
 
-                              ? 'bg-blue-600 text-white'
+                            : 'bg-slate-100 text-slate-400 group-hover:text-blue-600 group-hover:bg-blue-50'
 
-                              : 'bg-slate-100 text-slate-400 group-hover:text-blue-600 group-hover:bg-blue-50'
-
-                          }`}
+                            }`}
 
                         >
 
@@ -316,7 +312,7 @@ export default function App() {
 
                     </div>
 
-                    <p className="text-lg leading-relaxed text-slate-700 whitespace-pre-wrap">
+                    <p className="text-sm leading-relaxed text-slate-700 whitespace-pre-wrap">
 
                       {para.content}
 
@@ -324,23 +320,21 @@ export default function App() {
 
                   </div>
 
-                  
 
-                  <motion.button 
+
+                  <motion.button
 
                     whileTap={{ scale: 0.95 }}
 
                     onClick={() => handleCopy(para.content, para.id)}
 
-                    className={`shrink-0 flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-lg transition-all ${
+                    className={`shrink-0 flex items-center gap-2 px-4 py-2 text-xs font-bold rounded-lg transition-all ${copiedId === para.id
 
-                      copiedId === para.id 
-
-                      ? 'bg-green-600 text-white' 
+                      ? 'bg-green-600 text-white'
 
                       : 'bg-slate-900 text-white hover:bg-slate-800'
 
-                    }`}
+                      }`}
 
                   >
 
@@ -354,7 +348,7 @@ export default function App() {
 
                     )}
 
-                    {copiedId === para.id ? 'COPIED' : 'COPY'}
+                    {copiedId === para.id ? 'COPIED' : ''}
 
                   </motion.button>
 
@@ -370,7 +364,7 @@ export default function App() {
 
                 <p className="text-slate-500 font-medium">No results matching your archive search.</p>
 
-                <button 
+                <button
 
                   onClick={clearAllFilters}
 
@@ -390,16 +384,14 @@ export default function App() {
 
 
 
-          {/* Footer Stats */}
 
-          <div className="text-slate-400 text-xs font-medium mt-4 pb-4">
-
-            Displaying {filteredParagraphs.length} of {PARAGRAPHS.length} snippets
-
-          </div>
 
         </div>
+                        {/* Footer Stats */}
 
+          <div className="text-slate-400 text-xs font-medium mt-4 pb-4 grid place-content-center">
+                Displaying {filteredParagraphs.length} of {PARAGRAPHS.length} snippets
+          </div>
       </main>
 
     </div>
