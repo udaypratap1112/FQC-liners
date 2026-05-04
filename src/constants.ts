@@ -82,7 +82,7 @@ export const PARAGRAPHS: Paragraph[] = [
   },
   {
     id: "15",
-    categories: ["Employment","BRC"],
+    categories: ["Employment", "BRC"],
     content: "Verification of the specialization was requested, however, it was not disclosed by the Issuing Authority due to [enter reason why IA cannot disclose specialization]."
   },
   {
@@ -97,7 +97,7 @@ export const PARAGRAPHS: Paragraph[] = [
   },
   {
     id: "18",
-    categories: ["Employment","Education","HL/GS","BRC"],
+    categories: ["Employment", "Education", "HL/GS", "BRC"],
     content: "Verified - Verification obtained through Digi-flow.net Verification System, the official verification platform of DataFlow Group."
   },
   {
@@ -106,17 +106,27 @@ export const PARAGRAPHS: Paragraph[] = [
     content: `Contact details were identified for <IA name> upon detailed research: <email>.\nEmail sent requesting the verification of the Applicant's <check type for example employent> document to <email>.\nA reply was received from an Official at email id: <email>, stating that the document submitted by the Applicant is genuine.`
   },
   {
-    id:"20",
-    categories:["Appeal"],
-    content:"A Site Visit was conducted at <IA name>, where, <Assistant Controller of Examination (Name not disclosed)> stated that the document submitted by the applicant is genuine"
+    id: "20",
+    categories: ["Appeal"],
+    content: "A Site Visit was conducted at <IA name>, where, <Assistant Controller of Examination (Name not disclosed)> stated that the document submitted by the applicant is genuine"
   },
   {
-    id:"21",
-    categories:["Rajiv Gandhi"],
-    content:`Based on our review, we have found no evidence of duplicity.
+    id: "21",
+    categories: ["Rajiv Gandhi"],
+    content: `Based on our review, we have found no evidence of duplicity.
 
 To Authenticate the Mode of Study, we requested a complete copy of the applicant's passport (all pages), The submitted document confirms there were no travel records during that Period.
 
 Furthermore, the applicant has formally confirmed to Dataflow that no employment was undertaken while pursuing the Bachelor of Science in Nursing (Post Basic) program.`
+  },
+  {
+    id: "22",
+    categories: ["HL/GS", "Education", "Employment", "GS"],
+    content: "Information verified through the digital facility the License attained is a sub-Specialist in Adult kidney disease (adult nephrology)."
+  },
+  {
+    id: "23",
+    categories: ["HL/GS", "Education", "Employment", "GS"],
+    content: "On being probed regarding the clarification of overlap between the Education and Employment, there is no response received from the issuing authority."
   }
 ];
