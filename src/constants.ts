@@ -58,7 +58,7 @@ export const PARAGRAPHS: Paragraph[] = [
   {
     id: "10",
     categories: ["Education", "COVID-19"],
-    content: "The applicants mode of study is Full Time however the course was delivered to online classes during the COVID 19 Pandemic."
+    content: "Authorised contact confirmed that the mode of study is full time, however, during Covid 19 Pandemic, the mode of study was Blended / Online learning."
   },
   {
     id: "11",
