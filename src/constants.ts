@@ -128,5 +128,19 @@ Furthermore, the applicant has formally confirmed to Dataflow that no employment
     id: "23",
     categories: ["HL/GS", "Education", "Employment", "GS"],
     content: "On being probed regarding the clarification of overlap between the Education and Employment, there is no response received from the issuing authority."
-  }
+  },
+  {id:'24',
+  categories:["Appeal"],
+  content: `Contact details were identified for Khyber Medical University upon detailed research: verification@kmu.edu.pk.
+
+A verification request for the applicant's education document was sent through the Digi-flow Verification System, which is the official digitized platform for Khyber Medical University.
+  
+A reply was received from Jamil Ur Rahman, Controller of Examinations at Khyber Medical University who confirmed that the document submitted by the Applicant is genuine.`
+},
+
+{id:'25',
+  categories:["Appeal"],
+  content: `Verification received through post, where Assistant Director (M) (Name not disclosed), Department of Examinations Conduct at National Board of Examinations in Medical Sciences has verified the details.`
+}
+,
 ];
