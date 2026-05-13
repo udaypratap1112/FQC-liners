@@ -103,7 +103,11 @@ export const PARAGRAPHS: Paragraph[] = [
   {
     id: "19",
     categories: ["Appeal"],
-    content: `Contact details were identified for <IA name> upon detailed research: <email>.\nEmail sent requesting the verification of the Applicant's <check type for example employent> document to <email>.\nA reply was received from an Official at email id: <email>, stating that the document submitted by the Applicant is genuine.`
+    content: `Contact details were identified for <IA name> upon detailed research: <email>.
+    
+Email sent requesting the verification of the Applicant's <check type for example employent> document to <email>.
+  
+A reply was received from an Official at email id: <email>, stating that the document submitted by the Applicant is genuine.`
   },
   {
     id: "20",
