@@ -143,4 +143,12 @@ A reply was received from Jamil Ur Rahman, Controller of Examinations at Khyber 
   content: `Verification received through post, where Assistant Director (M) (Name not disclosed), Department of Examinations Conduct at National Board of Examinations in Medical Sciences has verified the details.`
 }
 ,
+{id:'26',
+  categories:["HL, HL/GS"],
+  content: `The applicant's license status reflecting as 'Full Registration in APS without license to practise,' allows them to work under supervision without a licence to practise. For this purpose the applicant paid an annual retention fee with a defined validity date.
+  
+<<GMC>>`
+}
+
+
 ];
