@@ -144,7 +144,7 @@ A reply was received from Jamil Ur Rahman, Controller of Examinations at Khyber 
 }
 ,
 {id:'26',
-  categories:["HL, HL/GS"],
+  categories:["HL/GS"],
   content: `The applicant's license status reflecting as 'Full Registration in APS without license to practise,' allows them to work under supervision without a licence to practise. For this purpose the applicant paid an annual retention fee with a defined validity date.
   
 <<GMC>>`
