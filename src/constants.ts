@@ -131,7 +131,7 @@ Furthermore, the applicant has formally confirmed to Dataflow that no employment
   {
     id: "23",
     categories: ["HL/GS", "Education", "Employment", "GS"],
-    content: "On being probed regarding the clarification of overlap between the Education and Employment, there is no response received from the issuing authority."
+    content: "On being probed regarding the overlap between the employment and education component,however, there was no response from the issuing Authority despite multiple attempts."
   },
   {id:'24',
   categories:["Appeal"],

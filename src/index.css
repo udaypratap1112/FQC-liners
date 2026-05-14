@@ -11,3 +11,12 @@
     -moz-osx-font-smoothing: grayscale;
   }
 }
+
+:root {
+  --bg-dynamic: #ffffff;
+  --surface-dynamic: oklch(0.97 0.01 250);
+  --primary-dynamic: oklch(0.55 0.22 250);
+  --text-dynamic: oklch(0.25 0.02 250);
+  --accent-dynamic: oklch(0.7 0.15 200);
+  --border-dynamic: oklch(0.9 0.02 250);
+}
