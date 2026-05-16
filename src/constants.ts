@@ -152,6 +152,18 @@ A reply was received from Jamil Ur Rahman, Controller of Examinations at Khyber 
   content: `The applicant's license status reflecting as 'Full Registration in APS without license to practise,' allows them to work under supervision without a licence to practise. For this purpose the applicant paid an annual retention fee with a defined validity date.
   
 <<GMC>>`
+},
+{id:'27',
+  categories:["Appeal"],
+  content: `Maharashtra Nursing Council directly post the verification to the client.
+
+Verification obtained from I/C Registrar (Name not Disclosed) at Maharashtra Nursing Council.`
+},
+{id:'28',
+  categories:["Appeal"],
+  content: `Verification has been obtained from client.
+
+Verification obtained from Judith Araba Christian (FGCNM Deputy Director (Operations) For Registrar at Nursing And Midwifery Council Of Ghana.`
 }
 
 
