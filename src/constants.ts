@@ -165,6 +165,18 @@ Verification obtained from I/C Registrar (Name not Disclosed) at Maharashtra Nur
 
 Verification obtained from Judith Araba Christian (FGCNM Deputy Director (Operations) For Registrar at Nursing And Midwifery Council Of Ghana.`
 }
+,
+{id:'29',
+  categories:["Rejection Remarks"],
+  content: `Please update the two sections as per the new update according to IAM Page.
+  
+1.  Institute Accreditation Status
+2. Program Accreditation Status`
+},
+{id:'30',
+  categories:["Report"],
+  content: `In the earlier case(barcode) document issued on ___was not genuine but in the current case applicant provided a new document issued on ___is genuine.`
+}
 
 
 ];
