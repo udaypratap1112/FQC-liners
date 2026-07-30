@@ -62,5 +62,31 @@ export interface Kb {
 2. **Recommended report remarks** in the client report:
          
  > *The applicant's license status reflecting as 'Full Registration in APS without license to practise,' allows them to work under supervision without a licence to practise. For this purpose the applicant paid an annual retention fee with a defined validity date.*`
-        }        
+        },
+        
+        {
+          id: "3", // Adjust your ID sequence accordingly
+          categories: ["Health License"],
+          content: `### Royal College Of General Practitioners (300433) - Verification Process
+
+---          
+      
+### Information:
+      
+1. Royal College Of General Practitioners confirmed that they do not have access to mode of study, duration of program, and period of study in membership documents.
+
+2. The checks that go through the Digiflow (STP) process will be disabled.
+
+3. The Issuing Authority only confirms that the certificate provided is true and accurate according to their records.
+      
+---
+      
+### Instructions:
+      
+1. Verification must **not** request any additional information (such as duration of program and period of study) from the Royal College Of General Practitioners (RCGP).
+
+2. **Veriflow fields** for duration of program and period of study should auto-capture as **NOT DISCLOSED**.
+
+3. **Important:** No rejections are to be made to request attempts or clarification regarding the duration of program and period of study information.`
+        }
   ];
